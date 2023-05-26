@@ -55,7 +55,7 @@ DetailPage.getLayout = function getlayout(page) {
     if (CONFIG.ogImageGenerateURL)
       return `${CONFIG.ogImageGenerateURL}/${encodeURIComponent(
         page.props?.post.title
-      )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fmorethan-log.vercel.app%2Flogo-for-dark-bg.svg`
+      )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fashfakh.in%2Flogo-for-dark-bg.svg`
   }
 
   const getMetaConfig = () => {
@@ -80,7 +80,9 @@ DetailPage.getLayout = function getlayout(page) {
   }
   return (
     <Layout metaConfig={getMetaConfig()} fullWidth={page.props.post?.fullWidth}>
-      {page}
+      <div style={{
+        background: "red"
+      }}>{page}</div>
     </Layout>
   )
 }
