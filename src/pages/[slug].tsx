@@ -80,9 +80,7 @@ DetailPage.getLayout = function getlayout(page) {
   }
   return (
     <Layout metaConfig={getMetaConfig()} fullWidth={page.props.post?.fullWidth}>
-      <div style={{
-        background: "red"
-      }}>{page}</div>
+      {page}
     </Layout>
   )
 }
