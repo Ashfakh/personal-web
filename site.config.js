@@ -12,6 +12,10 @@ const CONFIG = {
   },
   projects: [
     {
+      name: `hermes`,
+      href: "https://github.com/Ashfakh/hermes",
+    },
+    {
       name: `personal-web`,
       href: "https://github.com/Ashfakh/personal-web",
     },
